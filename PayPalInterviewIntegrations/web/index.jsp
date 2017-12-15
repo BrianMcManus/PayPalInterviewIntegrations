@@ -29,7 +29,6 @@
                   <ul class="dropdown-menu">
                     <li class="active"><a href="index.jsp">Drop-in UI</a></li>
                     <li><a href="merchantTransactions.jsp">Transaction List</a></li>
-                    <li><a href="#">Another Feature</a></li>
                   </ul>
                 </li>
               </ul>
@@ -128,11 +127,10 @@
                     },
                     error: function(error)
                     {
+                        
                         console.log(error);
                         //window.alert("Error"); 
-                        //window.alert(error);
-                        index.reload();
-                        
+                        //window.alert(error);                        
                     }
             });
         
@@ -199,7 +197,8 @@
     // incorrect configuration values or network issues.
     // An appropriate error will be shown in the UI.
     console.error(createErr);
-    alert(createErr);
+    location.reload(true);
+    //alert(createErr);
     return;
   }
   
@@ -212,7 +211,7 @@
         // No payment method is available.
         // An appropriate error will be shown in the UI.
         console.error(requestPaymentMethodErr);
-        alert(requestPaymentMethodErr);
+        //alert(requestPaymentMethodErr);
         return;
       }
       
