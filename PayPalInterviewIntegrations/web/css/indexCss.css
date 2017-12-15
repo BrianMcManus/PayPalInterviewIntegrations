@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-Aug-2017, 16:29:55
+    Author     : brian
+*/
+
+
+
+#myNavbar
+{
+    background-color: red;
+}
+
+#navTitle
+{
+    color:black;
+    font-size: 25px;
+}
+
+#navhead
+{
+    background-color: red;
+}
+
+#navListItem
+{
+    color:black;
+    font-size: 18px;
+}
+
+.parallax 
+{
+   /* The image used */
+   background-image: url("img/paralax.jpg");
+
+   /* Set a specific height */
+   min-height: 550px;
+   height:100%;
+
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+   color: white;    
+   padding-top:4%;
+   padding-bottom: 6%;
+}
+
+    
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 70%; 
+    height: 400px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+.image
+{
+    width: 100%;
+    height: 100%;
+}

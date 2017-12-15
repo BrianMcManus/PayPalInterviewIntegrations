@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PayPal Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="indexCss.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+            $("#slideshow > div:gt(0)").hide();
+
+          setInterval(function() { 
+            $('#slideshow > div:first')
+              .fadeOut(1000)
+              .next()
+              .fadeIn(1000)
+              .end()
+              .appendTo('#slideshow');
+          },  4000);
+          
+          });
+      </script>
+      
+      
+    </head>
+    <body style="background-color: #f2f2f2;">
+        
+         <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">PayPal Project</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right ">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="https://www.paypal.com/ie/webapps/mpp/about">About Us</a></li>
+                <li><a href="https://www.paypal.com/ie/selfhelp/home">Contact</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.jsp">Drop-in UI</a></li>
+                    <li><a href="merchantTransactions.jsp">Transaction List</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav> 
+        
+        
+        
+        
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="box-shadow: 0 0 20px rgba(0,0,0,0.4); width:80%; margin:auto; margin-top: 6%;">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="img/PayPalImage1.png" alt="PayPal Image 1" style="height:80%; width: 80%; margin:auto;" class="image">
+              </div>
+
+              <div class="item">
+                <img src="img/PayPalImage2.jpg" alt="PayPal Image 2" style="height:80%; width: 80%; margin:auto;" class="image">
+              </div>
+
+              <div class="item">
+                <img src="img/PayPalImage3.jpg" alt="PayPal Image 3" style="height:80%; width: 80%; margin:auto;" class="image">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+        
+        
+        
+        
+
+        <div id="container" style="background-color: white; height: 500px; width:80%; margin: 0 auto;">
+            
+            <article class="panel" id="first_article">
+                <div id="section1" class="container-fluid" style="margin: 4%;">
+                        <div id ="title_section_div1">
+                            <h1 id = "section_title1" style="text-align: center; margin-bottom: 3%;">Checkout with PayPal – Faster. Safer. Easier.</h1>
+                            <h3 style="text-align: center;">
+                                PayPal is a service that enables you to pay, send money, and accept payments without revealing your financial details.
+                            </h3>
+                        </div> 
+                    
+                     <div class="row">
+                        <div class="col-sm-4">
+                            <img src="https://www.paypalobjects.com/webstatic/mktg/icon/secure_paypal.gif" alt="" class="panel-img">
+                            <h2>Stay secure and protected</h2>
+                            <p>PayPal uses the latest in data encryption and anti-fraud technology to keep your information secure, reducing the risk of online fraud.</p>
+                       </div>
+                        <div class="col-sm-4">
+                            <img src="https://www.paypalobjects.com/webstatic/mktg/icon/tarjeta_paypal.gif" alt="" class="panel-img">
+                            <h2>Pay with flexibility</h2>
+                            <p>Register your credit card or debit card with your PayPal account. You can pay by simply choosing PayPal at checkout, logging into your PayPal account, and confirming your payment. We complete the process for you, without sharing your financial details with merchants and sellers.</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="https://www.paypalobjects.com/webstatic/mktg/icon/click_paypal.gif" alt="" class="panel-img">
+                            <h2>It's quick and easy</h2>
+                            <p>Simply choose PayPal when you select a payment option on this site, and you can quickly open a PayPal account and add your payment method to complete your purchase. You can use your PayPal account to shop safer with millions of merchants and sellers around the globe wherever you see the PayPal logo. Every day, 173 million people use PayPal in 202 countries and with 21 different currencies.</p>
+                        </div>
+                     </div>
+
+            </article>
+        </div>
+    </body>
+</html>
